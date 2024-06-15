@@ -54,8 +54,5 @@ elif [ usr_ch = 1 ]; then
   # Make the installer.sh executable and run it
   chmod +x installer.sh
   ./installer.sh
-  
+
 fi
-
-
-
