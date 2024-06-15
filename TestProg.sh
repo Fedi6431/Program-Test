@@ -51,7 +51,8 @@ if [[ $usr_ch = 1 ]]; then
     clear
   done
 EOF
-  
+  # clear apt outputs
+  clear
   # Make the installer.sh executable and run it
   chmod +x installer.sh
   ./installer.sh
@@ -97,7 +98,8 @@ elif [[ $usr_ch = 2 ]]; then
     clear
   done
 EOF
-  
+  # clear pkg outputs
+  clear
   # Make the installer.sh executable and run it
   chmod +x installer.sh
   ./installer.sh
