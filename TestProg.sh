@@ -6,7 +6,7 @@ apt full-upgrade -y
 apt autoremove -y
 
 # Install OpenJDK
-apt install openjdk-11-jdk -y
+apt install openjdk -y
 # Check the Java version of OpenJDK
 java -version
 
