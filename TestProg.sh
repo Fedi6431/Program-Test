@@ -17,7 +17,7 @@ do
       rm -rfv LHE-Local_Host_Executer
       echo -e "\nRemoved LHE-Local_Host_Executer succesfully!\n"
   elif [ $user_choice = 4 ]; then
-      break 0
+      break
   else 
     echo -e "\znWrong option\n"
   fi
