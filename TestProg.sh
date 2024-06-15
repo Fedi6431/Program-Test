@@ -2,7 +2,7 @@
 
 while :
 do
-  echo "Select option\n1) Install\n2) Update\n3) Remove\n4) Close"
+  echo -e "Select option\n1) Install\n2) Update\n3) Remove\n4) Close"
   read -p "--> " user_choice
   
   if [ $user_choice = 1 ]; then
