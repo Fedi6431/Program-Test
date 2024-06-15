@@ -43,7 +43,7 @@ if [[ $usr_ch = 1 ]]; then
         rm -rfv LHE-Local_Host_Executer
         echo -e "\\nRemoved LHE-Local_Host_Executer successfully!\\n"
     elif [ "\$user_choice" = 4 ]; then
-        echo -e "\\nThanks for using Fedi6431 LHE installer\\n"
+        echo -e "\\nThanks for using Fedi6431's LHE installer\\n"
         break
     else 
       echo -e "\\nWrong option\\n"
@@ -92,7 +92,7 @@ elif [[ $usr_ch = 2 ]]; then
         rm -rfv LHE-Local_Host_Executer
         echo -e "\\nRemoved LHE-Local_Host_Executer successfully!\\n"
     elif [ "\$user_choice" = 4 ]; then
-        echo -e "\\nThanks for using Fedi6431 LHE installer\\n"
+        echo -e "\\nThanks for using Fedi6431's LHE installer\\n"
         break
     else 
       echo -e "\\nWrong option\\n"
