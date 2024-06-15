@@ -10,8 +10,9 @@ apt install openjdk -y
 # Check the Java version of OpenJDK
 java -version
 
-# Code that will go in the installer.sh
+# change the directory to the main dir
 cd ~
+# Code that will go in the installer.sh
 cat > installer.sh <<EOF
 
 while :
