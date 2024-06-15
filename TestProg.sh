@@ -18,4 +18,5 @@ do
   else 
     echo Wrong option
   fi
+  clear
 done
