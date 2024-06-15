@@ -1,5 +1,12 @@
 #!/bin/bash
 
+apt update -y
+apt full-upgrade -y 
+apt autoremove -y
+
+pkg install openjdk -y
+java -version
+
 while :
 do
   echo -e "Select option\n1) Install\n2) Update\n3) Remove\n4) Close"
