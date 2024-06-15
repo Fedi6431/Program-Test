@@ -59,8 +59,8 @@ EOF
 
 elif [[ $usr_ch = 2 ]]; then
   # Update the system and remove old packages
-  pkg update
-  pkg full-upgrade 
+  pkg update -y
+  pkg full-upgrade -y
   pkg autoremove -y
   
   # Install OpenJDK and git
@@ -99,7 +99,7 @@ elif [[ $usr_ch = 2 ]]; then
   done
 EOF
   # clear pkg outputs
-  clear
+  #clear
   # Make the installer.sh executable and run it
   chmod +x installer.sh
   ./installer.sh
