@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#This software is protected by Fedi6431© copyrights 
 banner="What are you using:
 1) Linux 
 2) Termux
