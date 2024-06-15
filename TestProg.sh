@@ -12,7 +12,7 @@ Select option
 4) Close
 '''
 
-while [ True ]
+while :
 do
   echo $banner 
   read -p "--> " user_choice
