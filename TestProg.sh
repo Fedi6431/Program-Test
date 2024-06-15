@@ -60,7 +60,7 @@ EOF
 elif [[ $usr_ch = 2 ]]; then
   # Update the system and remove old packages
   pkg update -y
-  pkg full-upgrade -y 
+  pkg full-upgrade 
   pkg autoremove -y
   
   # Install OpenJDK and git
