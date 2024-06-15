@@ -11,8 +11,8 @@ apt install openjdk -y
 java -version
 
 # Code that will go in the installer.sh
-cat > installer.sh <<EOF
 cd ~
+cat > installer.sh <<EOF
 
 while :
 do
