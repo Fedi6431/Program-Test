@@ -19,7 +19,7 @@ do
   elif [ $user_choice = 4 ]; then
       break
   else 
-    echo -e "\znWrong option\n"
+    echo -e "\nWrong option\n"
   fi
   read -p "Press Enter to continue"
   clear
