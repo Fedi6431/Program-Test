@@ -1,12 +1,17 @@
 #!/bin/bash
 
+# Update the system and remove old pkg
 apt update -y
 apt full-upgrade -y 
 apt autoremove -y
 
+# install openjdk
 pkg install openjdk -y
+# try to take the java version of the openjdk
 java -version
 
+# code that will go in the installer.sh
+code ='''
 while :
 do
   echo -e "Select option\n1) Install\n2) Update\n3) Remove\n4) Close"
@@ -30,4 +35,17 @@ do
   fi
   read -p "Press Enter to continue"
   clear
-done
+done'''
+
+# go in the main direcotry
+cd ~
+
+# create the file installer.sh
+cat > installer.sh
+
+# inject the code in the installer.sh
+echo $code > installer.sh
+
+# start the installer.sh
+chmod +x installer.sh
+bash installer.sh
