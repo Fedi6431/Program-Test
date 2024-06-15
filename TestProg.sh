@@ -7,19 +7,19 @@ do
   
   if [ $user_choice = 1 ]; then
     git clone https://github.com/Fedi6431/LHE-Local_Host_Executer.git
-    echo LHE installed succesfully!
+    echo "\nLHE installed succesfully!\n"
   elif [ $user_choice = 2 ]; then
       rm -rfv LHE-Local_Host_Executer
-      echo Removed old LHE-Local_Host_Executer
+      echo -e "\nRemoved old LHE-Local_Host_Executer\n"
       git clone https://github.com/Fedi6431/LHE-Local_Host_Executer.git
-      echo Updated git LHE-Local_Host_Executer!
+      echo -e "\nUpdated git LHE-Local_Host_Executer!\n"
   elif [ $user_choice = 3 ]; then
       rm -rfv LHE-Local_Host_Executer
-      echo Removed LHE-Local_Host_Executer succesfully!
+      echo -e "\nRemoved LHE-Local_Host_Executer succesfully!\n"
   elif [ $user_choice = 4 ]; then
       exit 0
   else 
-    echo Wrong option
+    echo -e "\nWrong option\n"
   fi
   read -p "Press Enter to continue"
   clear
