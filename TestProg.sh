@@ -35,7 +35,8 @@ do
   fi
   read -p "Press Enter to continue"
   clear
-done'''
+done
+'''
 
 # go in the main direcotry
 cd ~
