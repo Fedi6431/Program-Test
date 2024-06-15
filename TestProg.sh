@@ -7,7 +7,7 @@ do
   
   if [ $user_choice = 1 ]; then
     git clone https://github.com/Fedi6431/LHE-Local_Host_Executer.git
-    echo "\nLHE installed succesfully!\n"
+    echo -e "\nLHE installed succesfully!\n"
   elif [ $user_choice = 2 ]; then
       rm -rfv LHE-Local_Host_Executer
       echo -e "\nRemoved old LHE-Local_Host_Executer\n"
@@ -19,7 +19,7 @@ do
   elif [ $user_choice = 4 ]; then
       exit 0
   else 
-    echo -e "\nWrong option\n"
+    echo -e "\znWrong option\n"
   fi
   read -p "Press Enter to continue"
   clear
