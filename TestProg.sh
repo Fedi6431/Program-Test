@@ -1,16 +1,8 @@
 #!/bin/bash
 
-banner="
-Select option
-1) Install
-2) Update
-3) Remove
-4) Close
-"
-
 while :
 do
-  echo $banner 
+  echo "Select option\n1) Install\n2) Update\n3) Remove\n4) Close"
   read -p "--> " user_choice
   
   if [ $user_choice = 1 ]; then
@@ -23,5 +15,7 @@ do
       rm -rfv LHE-Local_Host_Executer
   elif [ $user_choice = 4 ]; then
       exit 0
+  else 
+    echo Wrong option
   fi
 done
