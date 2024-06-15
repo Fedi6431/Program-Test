@@ -63,7 +63,7 @@ elif [[ $usr_ch = 2 ]]; then
   pkg autoremove -y
   
   # Install OpenJDK and git
-  pkg install openjdk -y
+  pkg install openjdk
   pkg install git
   # Check the Java version of OpenJDK
   java -version
