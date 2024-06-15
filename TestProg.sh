@@ -25,3 +25,4 @@ if [ $user_choice = "3" ] then
 if [ $user_choice = "4" ] then
     exit 0
 fi
+done
