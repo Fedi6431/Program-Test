@@ -1,16 +1,12 @@
 #!/bin/bash
 
-banner='''
+banner="
 Select option
-
 1) Install
-
 2) Update
-
 3) Remove
-
 4) Close
-'''
+"
 
 while :
 do
