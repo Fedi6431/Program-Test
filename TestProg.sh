@@ -59,7 +59,7 @@ EOF
 
 elif [[ $usr_ch = 2 ]]; then
   # Update the system and remove old packages
-  pkg update -y
+  pkg update
   pkg full-upgrade 
   pkg autoremove -y
   
