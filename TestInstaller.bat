@@ -6,8 +6,8 @@ if %errorlevel% == 0 (
     echo OpenJDK is already installed
 ) else (
     rem Install OpenJDK
-    set url=https://download.oracle.com/java/22/latest/jdk-22_windows-x64_bin.exe
-    set output=C:\Users\%username%\Desktop\jdk-22_windows-x64_bin.exe
+    set "url=https://download.oracle.com/java/22/latest/jdk-22_windows-x64_bin.exe"
+    set "output=C:\Users\%username%\Desktop\jdk-22_windows-x64_bin.exe"
     (
         echo $url = '%url%'
         echo $output = '%output%'
@@ -15,7 +15,7 @@ if %errorlevel% == 0 (
     ) > jdk_installer.ps1
     powershell.exe -ExecutionPolicy Bypass -File jdk_installer.ps1
     del jdk_installer.ps1
-    start C:\Users\%username%\Desktop\jdk-22_windows-x64_bin.exe
+    start "" "%output%"
     set /p WAIT="If OpenJDK is installed, press enter"
 )
 
@@ -25,8 +25,8 @@ if %errorlevel% == 0 (
     echo Git is already installed
 ) else (
     rem Install Git
-    set url=https://github.com/git-for-windows/git/releases/download/v2.45.2.windows.1/Git-2.45.2-64-bit.exe
-    set output=C:\Users\%username%\Desktop\Git-2.45.2-64-bit.exe
+    set "url=https://github.com/git-for-windows/git/releases/download/v2.45.2.windows.1/Git-2.45.2-64-bit.exe"
+    set "output=C:\Users\%username%\Desktop\Git-2.45.2-64-bit.exe"
     (
         echo $url = '%url%'
         echo $output = '%output%'
@@ -34,13 +34,12 @@ if %errorlevel% == 0 (
     ) > git_installer.ps1
     powershell.exe -ExecutionPolicy Bypass -File git_installer.ps1
     del git_installer.ps1
-    start C:\Users\%username%\Desktop\Git-2.45.2-64-bit.exe
+    start "" "%output%"
     set /p WAIT="If Git is installed, press enter"
 )
 
-cls
-
 :installer
+cls
 echo Installer menu
 echo 1) Install
 echo 2) Update
@@ -48,31 +47,26 @@ echo 3) Remove
 
 set /P user_choice="--> "
 
-if user_choice=="1" (
+if "%user_choice%"=="1" (
     git clone https://github.com/Fedi6431/LHE-Local_Host_Executer.git 
     echo.
-    echo LHE-Local_Host_Executer installed succesfully!
-    echo.
+    echo LHE-Local_Host_Executer installed successfully!
     echo.
     echo Thanks for using Fedi6431's LHE installer
     echo.
-  )
-if user_choice=="2" (
+) else if "%user_choice%"=="2" (
     rmdir /s /q LHE-Local_Host_Executer
     echo old LHE-Local_Host_Executer removed
     git clone https://github.com/Fedi6431/LHE-Local_Host_Executer.git
     echo.
-    echo LHE-Local_Host_Executer updated succesfully!
-    echo.
+    echo LHE-Local_Host_Executer updated successfully!
     echo.
     echo Thanks for using Fedi6431's LHE installer
     echo.
-)
-if user_choice=="3" (
+) else if "%user_choice%"=="3" (
     rmdir /s /q LHE-Local_Host_Executer
     echo.
-    echo LHE-Local_Host_Executer removed succesfully!
-    echo.
+    echo LHE-Local_Host_Executer removed successfully!
     echo.
     echo Thanks for using Fedi6431's LHE installer
     echo.
