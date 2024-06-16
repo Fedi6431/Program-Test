@@ -49,11 +49,31 @@ echo 3) Remove
 set /P user_choice="--> "
 
 if user_choice=="1" (
-    git clone https://github.com/Fedi6431/LHE-Local_Host_Executer.git
+    git clone https://github.com/Fedi6431/LHE-Local_Host_Executer.git 
+    echo.
+    echo LHE-Local_Host_Executer installed succesfully!
+    echo.
+    echo.
+    echo Thanks for using Fedi6431's LHE installer
+    echo.
   )
 if user_choice=="2" (
-  git clone https://github.com/Fedi6431/LHE-Local_Host_Executer.git
+    rmdir /s /q LHE-Local_Host_Executer
+    echo old LHE-Local_Host_Executer removed
+    git clone https://github.com/Fedi6431/LHE-Local_Host_Executer.git
+    echo.
+    echo LHE-Local_Host_Executer updated succesfully!
+    echo.
+    echo.
+    echo Thanks for using Fedi6431's LHE installer
+    echo.
 )
 if user_choice=="3" (
-
+    rmdir /s /q LHE-Local_Host_Executer
+    echo.
+    echo LHE-Local_Host_Executer removed succesfully!
+    echo.
+    echo.
+    echo Thanks for using Fedi6431's LHE installer
+    echo.
 )
