@@ -38,20 +38,21 @@ if %errorlevel% == 0 (
     set /p WAIT="If Git is installed, press enter"
 )
 
-:menu
+cls
+
+:installer
 echo Installer menu
 echo 1) Install
 echo 2) Update
 echo 3) Remove
-goto menu
 
 set /P user_choice="--> "
 
 if user_choice=="1" (
-
+    git clone https://github.com/Fedi6431/LHE-Local_Host_Executer.git
   )
 if user_choice=="2" (
-  
+  git clone https://github.com/Fedi6431/LHE-Local_Host_Executer.git
 )
 if user_choice=="3" (
 
