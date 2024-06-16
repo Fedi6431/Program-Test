@@ -45,6 +45,7 @@ echo 1) Install
 echo 2) Update
 echo 3) Remove
 echo 4) exit
+echo.
 
 set /P user_choice="--> "
 
