@@ -44,6 +44,7 @@ echo Installer menu
 echo 1) Install
 echo 2) Update
 echo 3) Remove
+echo 4) exit
 
 set /P user_choice="--> "
 
@@ -70,4 +71,12 @@ if "%user_choice%"=="1" (
     echo.
     echo Thanks for using Fedi6431's LHE installer
     echo.
+) else if "%user_choice%"=="4" (
+    echo.
+    echo Thanks for using Fedi6431's LHE installer
+    echo.
+    timeout /t 2 /nobreak >nul
+    exit
 )
+
+goto installer
