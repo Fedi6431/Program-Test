@@ -55,6 +55,7 @@ if "%user_choice%"=="1" (
     echo.
     echo Thanks for using Fedi6431's LHE installer
     echo.
+    set /p WAIT="Press enter to continue"
 ) else if "%user_choice%"=="2" (
     rmdir /s /q LHE-Local_Host_Executer
     echo old LHE-Local_Host_Executer removed
@@ -64,6 +65,7 @@ if "%user_choice%"=="1" (
     echo.
     echo Thanks for using Fedi6431's LHE installer
     echo.
+    set /p WAIT="Press enter to continue"
 ) else if "%user_choice%"=="3" (
     rmdir /s /q LHE-Local_Host_Executer
     echo.
@@ -71,6 +73,7 @@ if "%user_choice%"=="1" (
     echo.
     echo Thanks for using Fedi6431's LHE installer
     echo.
+    set /p WAIT="Press enter to continue"
 ) else if "%user_choice%"=="4" (
     echo.
     echo Thanks for using Fedi6431's LHE installer
