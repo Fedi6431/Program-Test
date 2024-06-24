@@ -20,7 +20,7 @@ public class CommandExecution {
                 System.out.println(line);
             }
 
-            int exitVal = pr.waitFor();
+            int exitVal = Runtime.getRuntime().waitFor();
             System.out.println("Exited with error code " + exitVal);
         } catch (Exception e) {
             System.out.println(e.toString());
