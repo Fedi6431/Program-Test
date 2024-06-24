@@ -5,7 +5,7 @@ public class CommandExecution {
     public static void main(String[] args) {
         try {
             Runtime rt = Runtime.getRuntime();
-            Process pr = rt.exec("su - test");
+            Process pr = rt.exec("apt update");
             String line;
             BufferedReader input = new BufferedReader(new InputStreamReader(pr.getInputStream()));
 
