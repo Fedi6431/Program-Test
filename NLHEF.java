@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 public class CommandExecution {
     public static void main(String[] args) {
         try {
-            Process cmd_process = Runtime.getRuntime().exec(new String[]{"pkg", "update"});
+            Process cmd_process = Runtime.getRuntime().exec(new String[]{"apt", "update"});
             String line;
             BufferedReader input = new BufferedReader(new InputStreamReader(cmd_process.getInputStream()));
 
