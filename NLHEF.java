@@ -13,7 +13,7 @@ public class CommandExecution {
                 System.out.println(line);
             }
 
-            pr = rt.exec("whoami");
+            Process cmd_process = Runtime.getRuntime().exec(new String[]{"pkg update"});
             input = new BufferedReader(new InputStreamReader(pr.getInputStream()));
 
             while ((line = input.readLine()) != null) {
