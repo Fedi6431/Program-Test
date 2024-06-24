@@ -19,9 +19,6 @@ public class CommandExecution {
             while ((line = input.readLine()) != null) {
                 System.out.println(line);
             }
-
-            int exitVal = Runtime.getRuntime().waitFor();
-            System.out.println("Exited with error code " + exitVal);
         } catch (Exception e) {
             System.out.println(e.toString());
             e.printStackTrace();
