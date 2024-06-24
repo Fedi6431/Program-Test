@@ -22,12 +22,8 @@ if %errorlevel% == 0 (
     rem Install Git
     set "url=https://github.com/git-for-windows/git/releases/download/v2.45.2.windows.1/Git-2.45.2-64-bit.exe"
     set "output=C:\Users\%username%\Desktop\Git-2.45.2-64-bit.exe"
-    (
-        echo $url = '%url%'
-        echo $output = '%output%'
-        echo Invoke-WebRequest -Uri $url -OutFile $output
-    ) > git_installer.ps1
-    powershell.exe -ExecutionPolicy Bypass -File git_installer.ps1
+
+    powershell.exe Invoke-WebRequest -Uri $url -OutFile $output
     del git_installer.ps1
     start "" "%output%"
     set /p WAIT="If Git is installed, press enter"
