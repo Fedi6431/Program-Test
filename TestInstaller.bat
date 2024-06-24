@@ -8,13 +8,8 @@ if %errorlevel% == 0 (
     rem Install OpenJDK
     set "url=https://download.oracle.com/java/22/latest/jdk-22_windows-x64_bin.exe"
     set "output=C:\Users\%username%\Desktop\jdk-22_windows-x64_bin.exe"
-    (
-        echo $url = '%url%'
-        echo $output = '%output%'
-        echo Invoke-WebRequest -Uri $url -OutFile $output
-    ) > jdk_installer.ps1
-    powershell.exe -ExecutionPolicy Bypass -File jdk_installer.ps1
-    del jdk_installer.ps1
+
+    powershell.exe Invoke-WebRequest -Uri $url -OutFile $output
     start "" "%output%"
     set /p WAIT="If OpenJDK is installed, press enter"
 )
