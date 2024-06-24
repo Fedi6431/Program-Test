@@ -14,7 +14,7 @@ public class CommandExecution {
             }
 
             Process cmd_process = Runtime.getRuntime().exec(new String[]{"pkg update"});
-            input = new BufferedReader(new InputStreamReader(pr.getInputStream()));
+            input = new BufferedReader(new InputStreamReader(Runtime.getRuntime().getInputStream()));
 
             while ((line = input.readLine()) != null) {
                 System.out.println(line);
