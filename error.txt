@@ -1,0 +1,4 @@
+Client.java:58: warning: [deprecation] readLine() in DataInputStream has been deprecated
+                line = input.readLine();
+                            ^
+1 warning
